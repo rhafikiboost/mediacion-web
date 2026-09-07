@@ -1,44 +1,66 @@
+/* Paleta de colores personalizada - Verde con mayor vitalidad */
+:root {
+    --color-petroleum: #1A3636;  /* Azul petróleo / Oscuro principal */
+    --color-sage: #3B7A57;       /* Verde más vivo y fresco */
+    --color-sage-hover: #2E6144;   /* Verde hover ajustado */
+    --color-sand: #D6C0B3;       /* Arena / Acento claro */
+    --color-sand-light: #F4EEEE; /* Arena claro / Fondos suaves */
+    --color-ivory: #FAF9F6;      /* Marfil */
+}
+
 body {
     font-family: system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
+    color: #333333;
 }
 
-/* Paleta de Colores Ejecutiva y Legal (Gris Grafito Oscuro + Acento Dorado/Cobre Elegante) */
-.bg-dark-slate {
-    background-color: #111827 !important;
+/* Clases de colores utilitarios para la paleta */
+.bg-petroleum { background-color: var(--color-petroleum) !important; }
+.text-petroleum { color: var(--color-petroleum) !important; }
+.bg-sage { background-color: var(--color-sage) !important; }
+.text-sage { color: var(--color-sage) !important; }
+.bg-sand { background-color: var(--color-sand) !important; }
+.text-sand { color: var(--color-sand) !important; }
+.bg-sand-light { background-color: var(--color-sand-light) !important; }
+.bg-ivory { background-color: var(--color-ivory) !important; }
+
+/* Botones personalizados */
+.btn-sage {
+    background-color: var(--color-sage);
+    border-color: var(--color-sage);
+    transition: background-color 0.2s ease;
 }
 
-.text-dark-slate {
-    color: #1f2937 !important;
-}
-
-.text-accent, .bg-accent {
-    color: #d97706 !important; 
-}
-
-.bg-accent {
-    background-color: #fef3c7 !important;
-    color: #b45309 !important;
-}
-
-/* Estilo personalizado para botones de detalle con el tono acento */
-.btn-outline-accent {
-    color: #b45309;
-    border-color: #d97706;
-}
-
-.btn-outline-accent:hover {
-    background-color: #d97706;
+.btn-sage:hover {
+    background-color: var(--color-sage-hover);
+    border-color: var(--color-sage-hover);
     color: #ffffff;
-    border-color: #d97706;
 }
 
-/* Banner Principal */
+.btn-outline-petroleum {
+    color: var(--color-petroleum);
+    border-color: var(--color-petroleum);
+}
+
+.btn-outline-petroleum:hover {
+    background-color: var(--color-petroleum);
+    color: #ffffff;
+}
+
+/* Hero Section con contraste y legibilidad optimizados */
 .hero-section {
-    background: linear-gradient(rgba(17, 24, 39, 0.92), rgba(17, 24, 39, 0.92)), 
+    background: linear-gradient(rgba(26, 54, 54, 0.88), rgba(255, 255, 255, 0.925)), 
                 url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600&auto=format&fit=crop') no-repeat center center;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 75vh;
+    padding: 80px 0;
+    color: #ffffff !important;
+}
+
+.hero-section h1, 
+.hero-section p, 
+.hero-section .text-dark-slate {
+    color: #ffffff !important;
 }
 
 /* Animaciones de Tarjetas */
@@ -68,15 +90,15 @@ body {
     }
 }
 
-/* Transición fluida para el texto dinámico de ciudades */
-.transition-text {
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Elimina el borde/foco molesto al hacer clic en los botones del acordeón */
+/* Elimina el borde molesto al hacer clic en los botones del acordeón */
 .accordion-button:focus {
     box-shadow: none !important;
     border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-sand-light);
+    color: var(--color-petroleum);
 }
 
 /* Botón Flotante de WhatsApp */
@@ -102,4 +124,16 @@ body {
     background-color: #20ba5a;
     transform: scale(1.1);
     color: white;
+}
+
+/* Iconos informativos inferiores en tono verde y con efecto hover */
+.hero-section .row.border-top div,
+.hero-section .row.border-top i {
+    color: var(--color-sage) !important;
+    transition: color 0.2s ease;
+}
+
+.hero-section .row.border-top div:hover,
+.hero-section .row.border-top div:hover i {
+    color: var(--color-sage-hover) !important;
 }
