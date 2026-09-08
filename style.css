@@ -63,7 +63,76 @@ body {
     color: #ffffff !important;
 }
 
-/* Animaciones de Tarjetas */
+/* Tarjeta de cobertura con bordes redondeados estilizados */
+.cobertura-card {
+    border-radius: 24px !important;
+}
+
+/* Subtítulo bajo cobertura.png con mayor tamaño y legibilidad */
+.cobertura-card .cobertura-subtitle,
+#cobertura .cobertura-subtitle {
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #2E6144 !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-pin-container {
+    background-color: #e6ede9;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-pin {
+    width: 24px;
+    height: 24px;
+    color: var(--color-sage);
+}
+
+.comunas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+/* AQUÍ SE APLICA EL TONO VERDE SUAVE QUE QUERÍAS EN LAS PASTILLAS */
+.comunas-list li {
+    background-color: #f1f6f3; 
+    padding: 11px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a3636;
+    transition: background-color 0.2s ease;
+}
+
+.comunas-list li:hover {
+    background-color: #e4efe9;
+}
+
+.check-badge {
+    background-color: var(--color-sage);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Animaciones de Tarjetas de Servicios */
 .service-card {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     border-radius: 12px;
@@ -90,7 +159,7 @@ body {
     }
 }
 
-/* Elimina el borde molesto al hacer clic en los botones del acordeón */
+/* Acordeón */
 .accordion-button:focus {
     box-shadow: none !important;
     border-color: rgba(0,0,0,.125);
@@ -128,7 +197,7 @@ body {
 
 .instagram-float {
     position: fixed;
-    bottom: 95px; /* Ubicado justo arriba del de WhatsApp */
+    bottom: 95px;
     right: 25px;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     color: white;
