@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
             btn.textContent = "Enviando solicitud...";
 
             const data = new FormData(form);
+            // Forzamos el asunto personalizado aquí para que Formspree lo tome por JavaScript
+            data.append('_subject', '¡Nueva Solicitud de Mediación desde la Web!');
+
             const response = await fetch(form.action, {
                 method: form.method,
                 body: data,
