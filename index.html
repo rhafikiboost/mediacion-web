@@ -47,9 +47,9 @@
                     <h1 class="display-4 fw-bold mb-3 text-white">Mediación Familiar Región de Valparaíso</h1>
                     <p class="lead mb-4 text-light">Te acompaño a encontrar acuerdos juntos y duraderos para ti y tu familia. Un espacio de diálogo, respeto y confianza para abordar los conflictos familiares y buscar soluciones que respondan a las necesidades de cada familia.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="https://wa.me/56995161879?text=Hola,%20quiero%20agendar%20mi%20mediación" class="btn btn-sage btn-lg px-4 py-3 shadow text-white" target="_blank">
+                        <button type="button" class="btn btn-sage btn-lg px-4 py-3 shadow text-white" data-bs-toggle="modal" data-bs-target="#modalAgendamiento">
                             <i class="bi bi-calendar-check me-2"></i> AGENDAR MI MEDIACIÓN
-                        </a>
+                        </button>
                         <a href="https://wa.me/56995161879?text=Hola,%20quiero%20hablar%20por%20WhatsApp" class="btn btn-outline-light btn-lg px-4 py-3" target="_blank">
                             <i class="bi bi-whatsapp me-2"></i> HABLAR POR WHATSAPP
                         </a>
@@ -340,6 +340,86 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal de Agendamiento -->
+    <div class="modal fade" id="modalAgendamiento" tabindex="-1" aria-labelledby="modalAgendamientoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg p-3 rounded-4 bg-ivory">
+                
+                <div class="modal-header border-0 pb-0">
+                    <h3 class="fw-bold text-petroleum m-0" id="modalAgendamientoLabel">Agenda tu mediación</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    
+                    <!-- Formulario -->
+                    <form id="formAgendamiento" action="https://formspree.io/f/mnpqooge" method="POST">
+                        <p class="text-muted small mb-4">Completa el siguiente formulario y me pondré en contacto contigo a la brevedad.</p>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-petroleum">Nombre y apellido *</label>
+                            <input type="text" name="nombre" class="form-control" placeholder="Escribe tu nombre completo" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-petroleum">Número de WhatsApp *</label>
+                            <input type="tel" name="whatsapp" class="form-control" placeholder="+56 9 ________" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-petroleum">Correo electrónico *</label>
+                            <input type="email" name="email" class="form-control" placeholder="Escribe tu correo electrónico" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-petroleum">¿Qué materia deseas mediar? *</label>
+                            <select name="materia" class="form-select" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Pensión de alimentos">Pensión de alimentos</option>
+                                <option value="Aumento de alimentos">Aumento de alimentos</option>
+                                <option value="Rebaja de alimentos">Rebaja de alimentos</option>
+                                <option value="Cese de alimentos">Cese de alimentos</option>
+                                <option value="Relación directa y regular">Relación directa y regular</option>
+                                <option value="Cuidado personal">Cuidado personal</option>
+                                <option value="Otra consulta">Otra consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-petroleum">Cuéntame brevemente tu situación</label>
+                            <textarea name="mensaje" class="form-control" rows="3" placeholder="Escribe aquí tu consulta o los antecedentes que consideres importantes."></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terminosModal" required>
+                            <label class="form-check-label text-muted small" for="terminosModal">Acepto ser contactado/a para recibir información relacionada con mi solicitud.</label>
+                        </div>
+
+                        <button type="submit" id="btnEnviar" class="btn btn-sage text-white w-100 py-2 fw-bold rounded-pill">
+                            ENVIAR SOLICITUD <i class="bi bi-chevron-right ms-1"></i>
+                        </button>
+
+                        <p class="text-muted text-center mt-3" style="font-size: 11px;">
+                            <i class="bi bi-lock-fill me-1"></i> Tu información será tratada de manera confidencial y utilizada únicamente para responder a tu solicitud.
+                        </p>
+                    </form>
+
+                    <!-- Mensaje de Éxito Personalizado (Oculto inicialmente) -->
+                    <div id="mensajeExito" class="text-center py-5" style="display: none;">
+                        <div class="mb-3">
+                            <i class="bi bi-check-circle-fill text-sage" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4 class="fw-bold text-petroleum mb-3">¡Gracias por contactarme!</h4>
+                        <p class="text-muted">He recibido tu solicitud. Me pondré en contacto contigo a la brevedad para orientarte sobre el proceso de mediación.</p>
+                        <button type="button" class="btn btn-sage text-white mt-3 px-4 rounded-pill" data-bs-dismiss="modal">Cerrar ventana</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Botones Flotantes -->
     <a href="https://www.instagram.com/mediacionfamiliar.privada?stkn=a3IxaWx3Yzg4NjI2&utm_source=ig_contact_invite" class="instagram-float shadow" target="_blank" title="Síguenos en Instagram">

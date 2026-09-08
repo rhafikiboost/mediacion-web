@@ -9,3 +9,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+const form = document.getElementById('formAgendamiento');
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('btnEnviar');
+        btn.disabled = true;
+        btn.textContent = "Enviando solicitud...";
+
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            form.style.display = 'none';
+            document.getElementById('mensajeExito').style.display = 'block';
+            form.reset();
+            btn.disabled = false;
+            btn.textContent = "ENVIAR SOLICITUD";
+        } else {
+            alert("Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.");
+            btn.disabled = false;
+            btn.textContent = "ENVIAR SOLICITUD";
+        }
+    });
