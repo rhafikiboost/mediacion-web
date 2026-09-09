@@ -229,3 +229,14 @@ body {
 .hero-section .row.border-top div:hover i {
     color: var(--color-sage-hover) !important;
 }
+
+.service-pill {
+    border-radius: 8px !important; /* Cambia esto si quieres esquinas más rectas o más redondas */
+    transition: all 0.3s ease;
+}
+
+.service-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+    background-color: #f8f9fa !important;
+}
