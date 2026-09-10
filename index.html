@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eva Osorio | Mediadora Familiar Privada - Valparaíso</title>
+    <title>Eva Osorio Astorga | Mediadora Familiar Privada - Valparaíso</title>
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,10 @@
     <!-- Barra de Navegación Fija -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-petroleum sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold text-white" href="#"><i class="bi bi-shield-check me-2 text-sage"></i>EVA OSORIO <span class="fs-6 fw-normal d-block d-sm-inline text-sand">Mediadora Familiar Privada</span></a>
+            <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="#">
+                <img src="logo.jpeg" alt="Logo Eva Osorio" class="rounded-circle bg-white p-1" style="width: 40px; height: 40px; object-fit: cover;">
+                <span>EVA OSORIO ASTORGA <span class="fs-6 fw-normal d-block d-sm-inline text-sand">Mediadora Familiar Privada</span></span>
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,32 +42,31 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section text-white d-flex align-items-center">
-        <div class="container py-5">
+    <header class="hero-section d-flex align-items-center">
+        <div class="container py-4">
             <div class="row align-items-center">
-                <div class="col-lg-7 fade-in">
-                    <span class="badge bg-sand text-petroleum mb-3 px-3 py-2 fs-6 fw-semibold">Región de Valparaíso</span>
-                    <h1 class="display-4 fw-bold mb-3 text-white">Mediación Familiar Región de Valparaíso</h1>
-                    <p class="lead mb-4 text-light">Te acompaño a encontrar acuerdos juntos y duraderos para ti y tu familia. Un espacio de diálogo, respeto y confianza para abordar los conflictos familiares y buscar soluciones que respondan a las necesidades de cada familia.</p>
+                <!-- Columna Izquierda: Textos y botones -->
+                <div class="col-lg-7 mb-4 mb-lg-0 fade-in">
+                    <span class="badge bg-sage text-white mb-3 px-3 py-2 fs-6 fw-semibold">Región de Valparaíso</span>
+                    <h1 class="display-5 fw-bold mb-3 text-petroleum">Mediación Familiar Región de Valparaíso</h1>
+                    <p class="lead mb-4">Te acompaño a encontrar acuerdos juntos y duraderos para ti y tu familia. Un espacio de diálogo, respeto y confianza para abordar los conflictos familiares de forma ágil y cercana.</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <button type="button" class="btn btn-sage btn-lg px-4 py-3 shadow text-white" data-bs-toggle="modal" data-bs-target="#modalAgendamiento">
+                        <button type="button" class="btn btn-sage btn-lg px-4 py-3 shadow text-white fw-bold" data-bs-toggle="modal" data-bs-target="#modalAgendamiento">
                             <i class="bi bi-calendar-check me-2"></i> AGENDAR MI MEDIACIÓN
                         </button>
-                        <a href="https://wa.me/56995161879?text=Hola, quiero hablar por WhatsApp" class="btn btn-outline-light btn-lg px-4 py-3" target="_blank">
+                        <a href="https://wa.me/56995161879?text=Hola,%20quiero%20hablar%20por%20WhatsApp" class="btn btn-outline-success btn-lg px-4 py-3 border-2 fw-bold" target="_blank">
                             <i class="bi bi-whatsapp me-2"></i> HABLAR POR WHATSAPP
                         </a>
                     </div>
                 </div>
                 
-                <!-- Tarjeta de Cobertura con imagen más grande -->
-                <div class="col-lg-5 mt-4 mt-lg-0" id="cobertura">
-                    <div class="cobertura-card shadow-lg border-0 bg-white p-4">
-                        <div class="mb-3 text-center">
-                            <img src="cobertura.png" alt="Cobertura en la Región de Valparaíso" class="img-fluid" style="max-height: 110px;">
+                <!-- Columna Derecha: Tarjeta de Cobertura angosta y desplazada a la derecha -->
+                <div class="col-lg-4 offset-lg-1" id="cobertura">
+                    <div class="cobertura-card card-angosta shadow-lg border-0 bg-white p-3">
+                        <div class="mb-2 text-center">
+                            <img src="cobertura.png" alt="Cobertura en la Región de Valparaíso" class="img-fluid" style="max-height: 90px;">
                         </div>
-                        
-                        <p class="cobertura-subtitle text-secondary fw-medium small mb-4 text-center">Atención y Mediación Familiar online en las siguientes comunas:</p>
-                        
+                        <p class="cobertura-subtitle fw-medium small mb-3 text-center">Atención y Mediación Familiar online en las siguientes comunas:</p>
                         <ul class="comunas-list list-unstyled mb-0">
                             <li><span class="check-badge"><i class="bi bi-check"></i></span> Quintero</li>
                             <li><span class="check-badge"><i class="bi bi-check"></i></span> Concón</li>
@@ -79,47 +81,54 @@
             </div>
 
             <!-- Iconos informativos inferiores -->
-            <div class="row text-center mt-5 pt-4 border-top border-light-subtle text-white">
-                <div class="col-md-4 mb-3 mb-md-0"><i class="bi bi-display text-sand me-2 fs-5"></i> Atención 100% online</div>
-                <div class="col-md-4 mb-3 mb-md-0"><i class="bi bi-clock-history text-sand me-2 fs-5"></i> Proceso ágil</div>
-                <div class="col-md-4"><i class="bi bi-person-heart text-sand me-2 fs-5"></i> Atención personalizada</div>
+            <div class="row text-center mt-5 pt-4 border-top border-secondary-subtle fw-medium">
+                <div class="col-md-4 mb-3 mb-md-0"><i class="bi bi-display text-sage me-2 fs-5"></i> Atención 100% online</div>
+                <div class="col-md-4 mb-3 mb-md-0"><i class="bi bi-clock-history text-sage me-2 fs-5"></i> Proceso ágil</div>
+                <div class="col-md-4"><i class="bi bi-person-heart text-sage me-2 fs-5"></i> Atención personalizada</div>
             </div>
         </div>
     </header>
 
-    <!-- ¿Por qué elegir la mediación familiar privada? -->
+    <!-- ¿Por qué elegir una mediación privada? -->
     <section class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-petroleum">¿Por qué elegir la mediación familiar privada?</h2>
+                <h2 class="fw-bold text-petroleum">¿Por qué elegir una mediación privada?</h2>
             </div>
             <div class="row g-4 text-center">
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="p-3 border rounded-3 h-100 bg-ivory service-pill">
-                        <i class="bi bi-shield-lock text-sage display-5 mb-3"></i>
-                        <h4 class="h6 fw-bold text-petroleum">Confidencialidad y respeto</h4>
-                        <p class="text-muted small mb-0">Toda la información es tratada con absoluta confidencialidad y respeto.</p>
+                        <div class="mb-3 text-sage display-6"><i class="bi bi-clock-history"></i></div>
+                        <h3 class="h6 fw-bold text-petroleum">Mayor rapidez</h3>
+                        <p class="small mb-0 text-muted">Evita esperas innecesarias. Solicita tu mediación y coordinamos una fecha dentro de 48 horas, según disponibilidad.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="p-3 border rounded-3 h-100 bg-ivory service-pill">
-                        <i class="bi bi-people text-sage display-5 mb-3"></i>
-                        <h4 class="h6 fw-bold text-petroleum">Acuerdos duraderos</h4>
-                        <p class="text-muted small mb-0">Fomentamos acuerdos justos, realistas y sostenibles en el tiempo.</p>
+                        <div class="mb-3 text-sage display-6"><i class="bi bi-person-hearts"></i></div>
+                        <h3 class="h6 fw-bold text-petroleum">Atención personalizada</h3>
+                        <p class="small mb-0 text-muted">Recibirás orientación durante las distintas etapas de la mediación.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="p-3 border rounded-3 h-100 bg-ivory service-pill">
-                        <i class="bi bi-heart text-sage display-5 mb-3"></i>
-                        <h4 class="h6 fw-bold text-petroleum">Enfoque humano y profesional</h4>
-                        <p class="text-muted small mb-0">Te acompaño con cercanía, imparcialidad y profesionalismo en cada etapa.</p>
+                        <div class="mb-3 text-sage display-6"><i class="bi bi-calendar3"></i></div>
+                        <h3 class="h6 fw-bold text-petroleum">Horarios flexibles</h3>
+                        <p class="small mb-0 text-muted">Podemos coordinar la sesión de acuerdo con la disponibilidad de las partes.</p>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md">
                     <div class="p-3 border rounded-3 h-100 bg-ivory service-pill">
-                        <i class="bi bi-calendar-event text-sage display-5 mb-3"></i>
-                        <h4 class="h6 fw-bold text-petroleum">Agenda en 48 hrs*</h4>
-                        <p class="text-muted small mb-0">Puedes solicitar una hora y coordinamos tu mediación dentro de 48 horas. *Sujeto a disponibilidad.</p>
+                        <div class="mb-3 text-sage display-6"><i class="bi bi-laptop"></i></div>
+                        <h3 class="h6 fw-bold text-petroleum">Atención online</h3>
+                        <p class="small mb-0 text-muted">Puedes participar desde la comodidad de tu hogar o desde cualquier lugar de Chile.</p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="p-3 border rounded-3 h-100 bg-ivory service-pill">
+                        <div class="mb-3 text-sage display-6"><i class="bi bi-shield-check"></i></div>
+                        <h3 class="h6 fw-bold text-petroleum">Espacio confidencial</h3>
+                        <p class="small mb-0 text-muted">Un ambiente adecuado para conversar y buscar acuerdos.</p>
                     </div>
                 </div>
             </div>
@@ -134,7 +143,7 @@
             <div class="col-lg-6">
                 <div class="mb-4">
                     <h2 class="fw-bold text-petroleum">¿Qué materias se pueden mediar?</h2>
-                    <p class="text-muted">Conoce las principales áreas cubiertas para solucionar conflictos familiares mediante el diálogo.</p>
+                    <p>Conoce las principales materias que pueden abordarse a través de la mediación familiar.</p>
                 </div>
 
                 <div class="row g-3">
@@ -144,7 +153,7 @@
                                 <div class="icon-box text-sage fs-2 me-3"><i class="bi bi-cash-coin"></i></div>
                                 <div>
                                     <h3 class="h6 card-title fw-bold text-petroleum mb-1">Pensión de alimentos</h3>
-                                    <p class="card-text text-muted small mb-0">Fijación, aumento, rebaja o cese de pensión de alimentos.</p>
+                                    <p class="card-text small mb-0">Fijación, aumento, rebaja o cese de pensión de alimentos.</p>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +164,7 @@
                                 <div class="icon-box text-sage fs-2 me-3"><i class="bi bi-person-badge"></i></div>
                                 <div>
                                     <h3 class="h6 card-title fw-bold text-petroleum mb-1">Cuidado personal (tuición)</h3>
-                                    <p class="card-text text-muted small mb-0">Acuerdos sobre el cuidado o crianza de los hijos.</p>
+                                    <p class="card-text small mb-0">Acuerdos sobre el cuidado o crianza de los hijos.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +175,7 @@
                                 <div class="icon-box text-sage fs-2 me-3"><i class="bi bi-people-fill"></i></div>
                                 <div>
                                     <h3 class="h6 card-title fw-bold text-petroleum mb-1">Relación directa y regular</h3>
-                                    <p class="card-text text-muted small mb-0">Régimen comunicacional y visitas.</p>
+                                    <p class="card-text small mb-0">Régimen comunicacional y visitas.</p>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +187,7 @@
             <div class="col-lg-6">
                 <div class="mb-4">
                     <h2 class="fw-bold text-petroleum">Nuestros servicios</h2>
-                    <p class="text-muted">Acompañamiento profesional y gestiones especializadas para tu tranquilidad.</p>
+                    <p>Acompañamiento profesional y gestiones especializadas para tu tranquilidad.</p>
                 </div>
 
                 <div class="row g-3">
@@ -237,29 +246,29 @@
                 <div class="col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100 service-pill">
                         <div class="badge bg-sage text-white rounded-circle p-2 fs-5 mb-3" style="width: 40px; height: 40px;">1</div>
-                        <h5 class="fw-bold text-petroleum">1. Contáctame</h5>
-                        <p class="text-muted small">Escríbeme por WhatsApp o completa el formulario de contacto.</p>
+                        <h3 class="h5 fw-bold text-petroleum">1. Contáctame</h3>
+                        <p class="small">Escríbeme por WhatsApp o completa el formulario de contacto.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100 service-pill">
                         <div class="badge bg-sage text-white rounded-circle p-2 fs-5 mb-3" style="width: 40px; height: 40px;">2</div>
-                        <h5 class="fw-bold text-petroleum">2. Orientación inicial</h5>
-                        <p class="text-muted small">Conversamos brevemente tu caso, resuelvo tus dudas y te explico el proceso.</p>
+                        <h3 class="h5 fw-bold text-petroleum">2. Orientación inicial</h3>
+                        <p class="small">Conversamos brevemente tu caso, resuelvo tus dudas y te explico el proceso.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100 service-pill">
                         <div class="badge bg-sage text-white rounded-circle p-2 fs-5 mb-3" style="width: 40px; height: 40px;">3</div>
-                        <h5 class="fw-bold text-petroleum">3. Sesión de mediación</h5>
-                        <p class="text-muted small">Realizamos la mediación online en un espacio de diálogo respetuoso y seguro.</p>
+                        <h3 class="h5 fw-bold text-petroleum">3. Sesión de mediación</h3>
+                        <p class="small">Realizamos la mediación online en un espacio de diálogo respetuoso y seguro.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-3 bg-white rounded shadow-sm h-100 service-pill">
                         <div class="badge bg-sage text-white rounded-circle p-2 fs-5 mb-3" style="width: 40px; height: 40px;">4</div>
-                        <h5 class="fw-bold text-petroleum">4. Acuerdo o certificado</h5>
-                        <p class="text-muted small">Si hay acuerdo, redactamos el acta. Si no es posible, se emite el certificado de mediación frustrada cuando corresponda.</p>
+                        <h3 class="h5 fw-bold text-petroleum">4. Acuerdo o certificado</h3>
+                        <p class="small">Si hay acuerdo, redactamos el acta. Si no es posible, se emite el certificado de mediación frustrada cuando corresponda.</p>
                     </div>
                 </div>
             </div>
@@ -268,24 +277,68 @@
 
     <!-- Sobre Mí -->
     <section id="sobre-mi" class="container py-5">
-        <div class="row align-items-center bg-white p-4 p-lg-5 rounded-4 shadow-sm">
-            <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                <img src="eva.png" alt="Eva Osorio - Mediadora Familiar" class="img-fluid rounded-circle shadow object-fit-cover border border-3 border-light" style="width: 200px; height: 200px; object-position: top;">
-            </div>
-            <div class="col-lg-8">
-                <span class="text-sage fw-bold text-uppercase small">Sobre mí</span>
-                <h2 class="fw-bold text-petroleum mb-3">Soy Eva Osorio Astorga</h2>
-                <h4 class="h6 text-muted fw-semibold mb-3">Mediadora Familiar Privada</h4>
-                <p class="text-muted">Mi compromiso es acompañarte con profesionalismo, empatía y respeto en aquellos momentos en que resolver un conflicto familiar puede resultar difícil.</p>
-                <p class="text-muted">Creo que detrás de cada caso hay personas, emociones y familias que necesitan ser escuchadas. Por eso, mi objetivo es crear un espacio de confianza y diálogo, donde encuentres orientación y acompañamiento durante todo el proceso.</p>
-                <p class="text-muted">Te ayudaré a buscar acuerdos de manera clara y respetuosa, procurando el bienestar de niños, niñas y adolescentes.</p>
-                <p class="text-petroleum fw-bold mb-4"><i class="bi bi-check-circle-fill text-sage me-2"></i>Tu familia, tus acuerdos y tu tranquilidad son importantes.</p>
-                
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="https://wa.me/56995161879?text=Hola,%20quiero%20consultar%20por%20valores" class="btn btn-sage text-white" target="_blank">Consultar por WhatsApp</a>
-                    <a href="https://www.instagram.com/mediacionfamiliar.privada?stkn=a3IxaWx3Yzg4NjI2&utm_source=ig_contact_invite" class="btn btn-outline-secondary border-secondary text-petroleum" target="_blank">
-                        <i class="bi bi-instagram text-danger me-1"></i> Sígueme en Instagram
-                    </a>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="bg-white p-4 p-lg-5 rounded-4 shadow-sm">
+                    
+                    <!-- Fila Superior: Todo el bloque centrado con elementos en línea / flex centrados -->
+                    <div class="row justify-content-center align-items-center mb-4 pb-4 border-bottom g-4">
+                        <div class="col-12 text-center">
+                            <div class="d-inline-flex flex-column flex-md-row align-items-center justify-content-center gap-4 mx-auto">
+                                <!-- Foto -->
+                                <img src="eva.jpeg" alt="Eva Osorio - Mediadora Familiar" class="img-fluid rounded-3 shadow object-fit-cover border border-3 border-light" style="width: 140px; height: 140px; object-position: top;">
+                                
+                                <!-- Textos -->
+                                <div class="text-center text-md-start">
+                                    <span class="text-sage fw-bold text-uppercase medium d-block mb-1">Sobre mí</span>
+                                    <h2 class="fw-bold text-petroleum mb-1 fs-2">Soy Eva Osorio Astorga</h2>
+                                    <h4 class="h5 fw-semibold text-blue mb-3">Mediadora Familiar Privada</h4>
+                                    <div>
+                                        <a href="https://www.instagram.com/mediacionfamiliar.privada?stkn=a3IxaWx3Yzg4NjI2&utm_source=ig_contact_invite" class="btn btn-outline-secondary border-secondary text-petroleum btn-sm px-3 py-2" target="_blank">
+                                            <i class="bi bi-instagram text-danger me-1"></i> Sígueme en Instagram
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Logo -->
+                                <img src="logo.jpeg" alt="Logo Eva Osorio" class="img-fluid rounded-circle shadow-sm border border-2 border-light" style="width: 120px; height: 120px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila Inferior: 2 columnas (Texto a la izquierda, Card de cobro a la derecha) -->
+                    <div class="row align-items-center g-4">
+                        
+                        <!-- Columna Izquierda: Texto descriptivo -->
+                        <div class="col-lg-7">
+                            <div class="medium mb-4">
+                                <p class="mb-2">Mi compromiso es acompañarte con profesionalismo, empatía y respeto en aquellos momentos en que resolver un conflicto familiar puede resultar difícil.</p>
+                                <p class="mb-2">Creo que detrás de cada caso hay personas, emociones y familias que necesitan ser escuchadas. Por eso, mi objetivo es crear un espacio de confianza y diálogo, donde encuentres orientación y acompañamiento durante todo el proceso.</p>
+                                <p class="mb-2">Te ayudaré a buscar acuerdos de manera clara y respetuosa, procurando el bienestar de niños, niñas y adolescentes.</p>
+                                <p class="text-petroleum fw-bold mb-0"><i class="bi bi-check-circle-fill text-sage me-2"></i>Tu familia, tus acuerdos y tu tranquilidad son importantes.</p>
+                            </div>
+                        </div>
+
+                        <!-- Columna Derecha: Card de Valores Accesibles -->
+                        <div class="col-lg-5">
+                            <div class="bg-ivory p-4 rounded-4 border text-center w-100 shadow-sm h-100 d-flex flex-column justify-content-center">
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <div class="rounded-circle bg-sand-light d-flex align-items-center justify-content-center shadow-sm" style="width: 70px; height: 70px;">
+                                        <span class="text-petroleum fw-bold fs-3">$</span>
+                                    </div>
+                                </div>
+                                <h3 class="fw-bold text-petroleum mb-2 fs-5">Valores accesibles</h3>
+                                <p class="text-blue mb-2 small fw-medium">Valores justos y transparentes.</p>
+                                <p class="text-blue mb-3 small">Consulta por nuestros valores según la materia que necesites.</p>
+                                
+                                <a href="https://wa.me/56995161879?text=Hola,%20quiero%20consultar%20por%20los%20valores" class="btn btn-sage text-white px-3 py-2 fw-bold rounded-pill shadow-sm w-100 small" target="_blank">
+                                    <i class="bi bi-whatsapp me-1"></i> CONSULTAR POR WHATSAPP
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -307,7 +360,7 @@
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     Es un proceso en el que un tercero imparcial, llamado mediador o mediadora, facilita el diálogo entre las partes para que puedan buscar y construir acuerdos respecto de materias familiares.
                                 </div>
                             </div>
@@ -319,7 +372,7 @@
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     En materias como alimentos, cuidado personal y relación directa y regular, la mediación previa es, por regla general, un requisito antes de iniciar una demanda ante el Tribunal de Familia.
                                 </div>
                             </div>
@@ -331,7 +384,7 @@
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     El acuerdo se deja por escrito en un acta de mediación. Una vez aprobada judicialmente, produce los efectos legales correspondientes.
                                 </div>
                             </div>
@@ -343,7 +396,7 @@
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     La mediación se da por terminada y se puede emitir un Certificado de Mediación Frustrada, documento que permite continuar con la vía judicial cuando corresponda.
                                 </div>
                             </div>
@@ -355,7 +408,7 @@
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     La mediación requiere la participación de ambas partes. Si una de ellas no participa o no es posible desarrollar el proceso, puede corresponder emitir el certificado respectivo según las circunstancias del caso.
                                 </div>
                             </div>
@@ -367,7 +420,7 @@
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     Dependiendo de la materia, pueden solicitarse documentos como cédula de identidad, certificado de nacimiento de los hijos y antecedentes relacionados con el acuerdo que se desea alcanzar.
                                 </div>
                             </div>
@@ -379,7 +432,7 @@
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     Sí. La mediación se desarrolla bajo principios que buscan proteger un espacio de diálogo y confianza entre las partes.
                                 </div>
                             </div>
@@ -391,8 +444,20 @@
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                <div class="accordion-body text-muted">
+                                <div class="accordion-body">
                                     No. El mediador es un tercero imparcial y no decide por las partes. Su función es facilitar la comunicación y ayudar a encontrar posibles acuerdos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                    9. ¿La mediación familiar privada tiene costo?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Sí. La mediación familiar privada es un servicio profesional de pago. Antes de agendar, te informaremos de manera clara el valor del servicio y qué incluye, para que conozcas todos los detalles.
                                 </div>
                             </div>
                         </div>
@@ -417,7 +482,7 @@
                     <!-- Formulario con el asunto personalizado de Formspree -->
                     <form id="formAgendamiento" action="https://formspree.io/f/mnpqooge" method="POST">
     
-                        <p class="text-muted small mb-4">Completa el siguiente formulario y me pondré en contacto contigo a la brevedad.</p>
+                        <p class="mb-4">Completa el siguiente formulario y me pondré en contacto contigo a la brevedad.</p>
 
                         <div class="mb-3">
                             <label class="form-label small fw-bold text-petroleum">Nombre y apellido *</label>
@@ -455,14 +520,14 @@
 
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="terminosModal" required>
-                            <label class="form-check-label text-muted small" for="terminosModal">Acepto ser contactado/a para recibir información relacionada con mi solicitud.</label>
+                            <label class="form-check-label small" for="terminosModal">Acepto ser contactado/a para recibir información relacionada con mi solicitud.</label>
                         </div>
 
                         <button type="submit" id="btnEnviar" class="btn btn-sage text-white w-100 py-2 fw-bold rounded-pill">
                             ENVIAR SOLICITUD <i class="bi bi-chevron-right ms-1"></i>
                         </button>
 
-                        <p class="text-muted text-center mt-3" style="font-size: 11px;">
+                        <p class="text-center mt-3" style="font-size: 11px;">
                             <i class="bi bi-lock-fill me-1"></i> Tu información será tratada de manera confidencial y utilizada únicamente para responder a tu solicitud.
                         </p>
                     </form>
@@ -473,7 +538,7 @@
                             <i class="bi bi-check-circle-fill text-sage" style="font-size: 3rem;"></i>
                         </div>
                         <h4 class="fw-bold text-petroleum mb-3">¡Gracias por contactarme!</h4>
-                        <p class="text-muted">He recibido tu solicitud. Me pondré en contacto contigo a la brevedad para orientarte sobre el proceso de mediación.</p>
+                        <p>He recibido tu solicitud. Me pondré en contacto contigo a la brevedad para orientarte sobre el proceso de mediación.</p>
                         <button type="button" class="btn btn-sage text-white mt-3 px-4 rounded-pill" data-bs-dismiss="modal">Cerrar ventana</button>
                     </div>
 
@@ -494,7 +559,10 @@
     <!-- Pie de página -->
     <footer class="bg-petroleum text-white py-4">
         <div class="container text-center">
-            <h5 class="fw-bold mb-3">EVA OSORIO <span class="text-sand fs-6">MEDIADORA FAMILIAR PRIVADA</span></h5>
+            <div class="mb-3">
+                <img src="logo.jpeg" alt="Logo Eva Osorio" class="rounded-circle bg-white p-1 shadow" style="width: 70px; height: 70px; object-fit: cover;">
+            </div>
+            <h5 class="fw-bold mb-3">EVA OSORIO ASTORGA <span class="text-sand fs-6">MEDIADORA FAMILIAR PRIVADA</span></h5>
             <p class="mb-1 text-light"><i class="bi bi-telephone-fill me-2"></i> +56 9 9516 1879 | <i class="bi bi-envelope-fill me-2"></i> evaosoriomediadorafamiliar@gmail.com</p>
             <p class="mb-2 text-light small"><i class="bi bi-geo-alt-fill me-2"></i> Cobertura Región de Valparaíso: Quintero, Concón, Viña del Mar, Valparaíso, Quilpué, Villa Alemana, San Antonio</p>
             <hr class="border-secondary my-3">

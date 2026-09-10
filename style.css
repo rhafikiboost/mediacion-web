@@ -1,28 +1,45 @@
-/* Paleta de colores personalizada - Verde con mayor vitalidad */
+/* Paleta de colores personalizada corregida según especificaciones */
 :root {
-    --color-petroleum: #1A3636;  /* Azul petróleo / Oscuro principal */
-    --color-sage: #3B7A57;       /* Verde más vivo y fresco */
-    --color-sage-hover: #2E6144;   /* Verde hover ajustado */
+    --color-petroleum: #1A3637;  /* Títulos principales: #1A3637 */
+    --color-blue: #315B70;       /* Subtítulos / textos destacados: #315B70 */
+    --color-text-normal: #4A4A4A;/* Texto normal: #4A4A4A */
+    --color-sage: #2F806F;       /* Botones principales: #2F806F */
+    --color-sage-hover: #246557; /* Verde hover ajustado */
     --color-sand: #D6C0B3;       /* Arena / Acento claro */
     --color-sand-light: #F4EEEE; /* Arena claro / Fondos suaves */
-    --color-ivory: #FAF9F6;      /* Marfil */
+    --color-ivory: #FAF9F5;      /* Blanco cálido de fondo: #FAF9F5 */
 }
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
     scroll-behavior: smooth;
-    color: #333333;
+    color: var(--color-text-normal);
+    background-color: var(--color-ivory);
 }
 
 /* Clases de colores utilitarios para la paleta */
 .bg-petroleum { background-color: var(--color-petroleum) !important; }
 .text-petroleum { color: var(--color-petroleum) !important; }
+.text-blue { color: var(--color-blue) !important; }
+.bg-blue { background-color: var(--color-blue) !important; }
 .bg-sage { background-color: var(--color-sage) !important; }
 .text-sage { color: var(--color-sage) !important; }
 .bg-sand { background-color: var(--color-sand) !important; }
 .text-sand { color: var(--color-sand) !important; }
 .bg-sand-light { background-color: var(--color-sand-light) !important; }
 .bg-ivory { background-color: var(--color-ivory) !important; }
+
+/* Aplicamos el color azul a subtítulos y textos destacados generales */
+.lead,
+.cobertura-card .cobertura-subtitle,
+#cobertura .cobertura-subtitle,
+.text-secondary,
+.card-subtitle,
+section h4.text-muted,
+.accordion-body,
+.modal-body p.text-muted {
+    color: var(--color-blue) !important;
+}
 
 /* Botones personalizados */
 .btn-sage {
@@ -47,35 +64,38 @@ body {
     color: #ffffff;
 }
 
-/* Hero Section con contraste y legibilidad optimizados */
+/* Hero Section ajustado para usar fondo.jpeg */
 .hero-section {
-    background: linear-gradient(rgba(26, 54, 54, 0.88), rgba(255, 255, 255, 0.925)), 
-                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1600&auto=format&fit=crop') no-repeat center center;
+    background: linear-gradient(135deg, rgba(250, 249, 245, 0.95) 0%, rgba(250, 249, 245, 0.7) 50%, rgba(26, 54, 55, 0.3) 100%), 
+                url('fondo.jpeg') no-repeat center center;
     background-size: cover;
-    min-height: 75vh;
+    min-height: 80vh;
     padding: 80px 0;
-    color: #ffffff !important;
+    color: var(--color-petroleum) !important;
 }
 
-.hero-section h1, 
-.hero-section p, 
-.hero-section .text-dark-slate {
-    color: #ffffff !important;
+/* Aseguramos que los títulos principales del hero mantengan el color petróleo correcto (#1A3637) */
+.hero-section h1 {
+    color: var(--color-petroleum) !important;
 }
 
-/* Tarjeta de cobertura con bordes redondeados estilizados */
-.cobertura-card {
+/* Tarjeta de cobertura esbelta y desplazada a la derecha */
+.card-angosta {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: 0;
     border-radius: 24px !important;
 }
 
-/* Subtítulo bajo cobertura.png con mayor tamaño y legibilidad */
-.cobertura-card .cobertura-subtitle,
-#cobertura .cobertura-subtitle {
-    font-size: 16px !important;
-    font-weight: 500;
-    color: #2E6144 !important;
-    margin-top: 10px;
-    margin-bottom: 20px;
+/* Corrección para la tarjeta de cobertura en dispositivos móviles */
+@media (max-width: 991.98px) {
+    .cobertura-card.card-angosta {
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 2rem !important;
+        border-radius: 24px !important;
+    }
 }
 
 .icon-pin-container {
@@ -101,7 +121,7 @@ body {
     gap: 9px;
 }
 
-/* AQUÍ SE APLICA EL TONO VERDE SUAVE QUE QUERÍAS EN LAS PASTILLAS */
+/* Pastillas de comunas */
 .comunas-list li {
     background-color: #f1f6f3; 
     padding: 11px 15px;
@@ -111,7 +131,7 @@ body {
     gap: 12px;
     font-size: 15px;
     font-weight: 500;
-    color: #1a3636;
+    color: var(--color-petroleum);
     transition: background-color 0.2s ease;
 }
 
@@ -231,7 +251,7 @@ body {
 }
 
 .service-pill {
-    border-radius: 8px !important; /* Cambia esto si quieres esquinas más rectas o más redondas */
+    border-radius: 8px !important;
     transition: all 0.3s ease;
 }
 
